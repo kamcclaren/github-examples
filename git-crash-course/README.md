@@ -39,13 +39,37 @@ cd GitHub-Examples
 
 ## Commits
 
-## Branches
+When we want to commit code we can write git commit which will open up the commit edit message in the editor of choice.
+```sh
+git commit
+```
+Set the global editor
+```
+git config --global core.editor nano
+```
+
+Make a commit and commit meessage without op[ening an editor]
+```sh
+git commit -m "add another message"
+```
+
+git add .
+```
+## BRanches
 
 ## Remotes
 
 ## Stashing
 
 ## Merging
+
+## Add
+
+When we want to stage 
+```
+git add Readme.md
+git add . 
+```
 
 ## Reset
 
@@ -61,3 +85,30 @@ git reset
 ## Status
 
 Git status shows you what files will or will not be committed. 
+```
+git status
+```
+
+## Gitconfig file 
+The gitconfig fileis what stores your global configurations such as email, name, editor and more. 
+Showing the contents of our .gitconfig file
+```
+git config --list
+```
+
+When you first install Git on a machine you asre suppose to set up your name and email. 
+```
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+```
+
+## Log
+git log will show recent git commits to the git tree
+ 
+## Push
+
+When we want to push a repo to our remote origin
+
+```
+git push
+```
